@@ -37,7 +37,7 @@ sort_stats = sorted(stats.items(), key=lambda x: x[1], reverse=True)
 
 # show speaker stats sorted by most frequent speaker
 
-print(%4d speakers" (%(len(sort_stats))))
+print("%4d speakers during %s" %(len(sort_stats), sys.argv[1]))
 
 for s in sort_stats:
-    print("%20s spoke %4d times " %(s[0], s[1])) 
+    print("%20s,  %4d  " %(s[0], s[1])) 
